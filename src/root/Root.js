@@ -19,15 +19,13 @@ const Root = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
 
-  // filters states:
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [searchByNameInput, setSearchByNameInput] = useState("");
 
   const [priceFilter, setPriceFilter] = useState([]);
 
-  // min and max price for filter
   const [priceRange, setPriceRange] = useState([]);
-  // sort select state
+
   const [sortSelect, setSortSelect] = useState("noSorting");
 
   const [favProduct, setFavProduct] = useState(getFavProductFromLocalStorage());
