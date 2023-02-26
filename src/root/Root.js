@@ -198,14 +198,6 @@ const Root = () => {
     setIsFilterOpen(!isFilterOpen);
   };
 
-  const openFilter = () => {
-    setIsFilterOpen(true);
-  };
-
-  const closeFilter = () => {
-    setIsFilterOpen(false);
-  };
-
   const addToCart = (productId) => {
     let isProductAlreadyInCart;
 
@@ -298,8 +290,7 @@ const Root = () => {
         calculateTotal,
         selectCategoryForFilter,
         togglefilterOpen,
-        openFilter,
-        closeFilter,
+
         handleProductByNameSearch,
         handlePriceRangeChange,
         resetFilters,
